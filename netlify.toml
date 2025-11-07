@@ -1,6 +1,10 @@
-[functions]
-  directory = "netlify/functions"
+# netlify.toml
 
+[functions]
+  # 1. 告诉 Netlify 你的函数文件夹叫 "functions"
+  directory = "functions"
+
+# 2. 创建 /api 快捷方式
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api"
